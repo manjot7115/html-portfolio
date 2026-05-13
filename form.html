@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Job Application Form</title>
+</head>
+
+<body bgcolor="#f9f9f9">
+
+    <!-- Header Section -->
+    <table width="100%" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+            <td align="center">
+                <h1>Job Application Form</h1>
+                <p><i>Please fill out all the details carefully. Fields marked with an asterisk (*) are mandatory.</i>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Form Container (Using a centered table for max width constraints to keep it neat) -->
+    <table width="800" align="center" cellpadding="20" cellspacing="0" bgcolor="#ffffff">
+        <tr>
+            <td>
+                <!-- Start of Form -->
+                <form action="#" method="POST" enctype="multipart/form-data">
+
+                    <!-- 1. Basic Information Section -->
+                    <fieldset>
+                        <legend>
+                            <h3>1. Basic Information</h3>
+                        </legend>
+                        <table width="100%" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td width="30%"><label for="fullName">Full Name * :</label></td>
+                                <td width="70%"><input type="text" id="fullName" name="fullName"
+                                        placeholder="Enter your full name" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fatherName">Father's Name:</label></td>
+                                <td><input type="text" id="fatherName" name="fatherName"
+                                        placeholder="Enter your father's name" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="motherName">Mother's Name:</label></td>
+                                <td><input type="text" id="motherName" name="motherName"
+                                        placeholder="Enter your mother's name" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Gender * :</label></td>
+                                <td>
+                                    <input type="radio" id="genderMale" name="gender" value="Male" required>
+                                    <label for="genderMale">Male</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="genderFemale" name="gender" value="Female" required>
+                                    <label for="genderFemale">Female</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="genderOther" name="gender" value="Other" required>
+                                    <label for="genderOther">Other</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="dob">Date of Birth * :</label></td>
+                                <td><input type="date" id="dob" name="dob" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="age">Age:</label></td>
+                                <td><input type="number" id="age" name="age" placeholder="e.g. 25" min="18" max="100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="profilePhoto">Profile Photo Upload * :</label></td>
+                                <td><input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Marital Status:</label></td>
+                                <td>
+                                    <input type="radio" id="single" name="maritalStatus" value="Single">
+                                    <label for="single">Single</label>
+                                    &nbsp;&nbsp;
+                                    <input type="radio" id="married" name="maritalStatus" value="Married">
+                                    <label for="married">Married</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 2. Contact Information Section -->
+                    <fieldset>
+                        <legend>
+                            <h3>2. Contact Information</h3>
+                        </legend>
+                        <table width="100%" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td width="30%"><label for="email">Email Address * :</label></td>
+                                <td width="70%"><input type="email" id="email" name="email"
+                                        placeholder="example@domain.com" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone">Phone Number * :</label></td>
+                                <td><input type="tel" id="phone" name="phone" placeholder="10-digit mobile number"
+                                        pattern="[0-9]{10}" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="altPhone">Alternate Phone Number:</label></td>
+                                <td><input type="tel" id="altPhone" name="altPhone"
+                                        placeholder="Alternate mobile number" pattern="[0-9]{10}" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><label for="address">Address * :</label></td>
+                                <td><textarea id="address" name="address" rows="4" cols="47"
+                                        placeholder="Enter your full residential address" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="city">City * :</label></td>
+                                <td><input type="text" id="city" name="city" placeholder="City Name" size="45" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="state">State * :</label></td>
+                                <td><input type="text" id="state" name="state" placeholder="State Name" size="45"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="country">Country * :</label></td>
+                                <td><input type="text" id="country" name="country" placeholder="Country Name" size="45"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pincode">PIN Code * :</label></td>
+                                <td><input type="text" id="pincode" name="pincode" placeholder="6-digit ZIP/PIN code"
+                                        size="45" required></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 3. Educational Details Section -->
+                    <fieldset>
+                        <legend>
+                            <h3>3. Educational Details</h3>
+                        </legend>
+                        <table width="100%" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td width="30%"><label for="tenthMarks">10th Percentage / CGPA * :</label></td>
+                                <td width="70%"><input type="text" id="tenthMarks" name="tenthMarks"
+                                        placeholder="e.g. 85% or 9.0" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="twelfthMarks">12th Percentage / CGPA * :</label></td>
+                                <td><input type="text" id="twelfthMarks" name="twelfthMarks"
+                                        placeholder="e.g. 80% or 8.5" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="graduationCourse">Graduation Course * :</label></td>
+                                <td><input type="text" id="graduationCourse" name="graduationCourse"
+                                        placeholder="e.g. B.Tech in Computer Science" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="collegeName">College Name * :</label></td>
+                                <td><input type="text" id="collegeName" name="collegeName"
+                                        placeholder="Enter your college name" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="universityName">University Name * :</label></td>
+                                <td><input type="text" id="universityName" name="universityName"
+                                        placeholder="Enter your university name" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="skills">Skills:</label></td>
+                                <td><input type="text" id="skills" name="skills"
+                                        placeholder="List key skills (comma-separated)" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="certifications">Certifications:</label></td>
+                                <td><input type="text" id="certifications" name="certifications"
+                                        placeholder="List any relevant certifications" size="45"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 4. Job Related Information Section -->
+                    <fieldset>
+                        <legend>
+                            <h3>4. Job Related Information</h3>
+                        </legend>
+                        <table width="100%" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td width="30%"><label for="position">Applying For Position * :</label></td>
+                                <td width="70%">
+                                    <select id="position" name="position" required>
+                                        <option value="">-- Select a Position --</option>
+                                        <option value="Frontend Developer">Frontend Developer</option>
+                                        <option value="Backend Developer">Backend Developer</option>
+                                        <option value="Full Stack Developer">Full Stack Developer</option>
+                                        <option value="UI/UX Designer">UI/UX Designer</option>
+                                        <option value="Data Scientist">Data Scientist</option>
+                                        <option value="DevOps Engineer">DevOps Engineer</option>
+                                        <option value="Product Manager">Product Manager</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="jobLocation">Preferred Job Location:</label></td>
+                                <td><input type="text" id="jobLocation" name="jobLocation"
+                                        placeholder="e.g. Remote, New York, London" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="expectedSalary">Expected Salary:</label></td>
+                                <td><input type="text" id="expectedSalary" name="expectedSalary"
+                                        placeholder="e.g. $80,000 / year" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><label for="workExperience">Work Experience:</label></td>
+                                <td><textarea id="workExperience" name="workExperience" rows="5" cols="47"
+                                        placeholder="Briefly describe your previous work experience..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="resume">Resume Upload * :</label></td>
+                                <td><input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="linkedin">LinkedIn Profile * :</label></td>
+                                <td><input type="url" id="linkedin" name="linkedin"
+                                        placeholder="https://linkedin.com/in/username" size="45" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="github">GitHub Profile:</label></td>
+                                <td><input type="url" id="github" name="github"
+                                        placeholder="https://github.com/username" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="portfolio">Portfolio Website:</label></td>
+                                <td><input type="url" id="portfolio" name="portfolio"
+                                        placeholder="https://yourwebsite.com" size="45"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 5. Technical Skills Section -->
+                    <fieldset>
+                        <legend>
+                            <h3>5. Technical Skills</h3>
+                        </legend>
+                        <p><i>Select all the technical skills you possess:</i></p>
+                        <table width="100%" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td width="25%">
+                                    <input type="checkbox" id="skillHTML" name="techSkills" value="HTML">
+                                    <label for="skillHTML">HTML</label>
+                                </td>
+                                <td width="25%">
+                                    <input type="checkbox" id="skillCSS" name="techSkills" value="CSS">
+                                    <label for="skillCSS">CSS</label>
+                                </td>
+                                <td width="25%">
+                                    <input type="checkbox" id="skillJS" name="techSkills" value="JavaScript">
+                                    <label for="skillJS">JavaScript</label>
+                                </td>
+                                <td width="25%">
+                                    <input type="checkbox" id="skillPython" name="techSkills" value="Python">
+                                    <label for="skillPython">Python</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="skillJava" name="techSkills" value="Java">
+                                    <label for="skillJava">Java</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="skillCpp" name="techSkills" value="C++">
+                                    <label for="skillCpp">C++</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="skillSQL" name="techSkills" value="SQL">
+                                    <label for="skillSQL">SQL</label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="skillReact" name="techSkills" value="React">
+                                    <label for="skillReact">React</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 6. Additional Information Section -->
+                    <fieldset>
+                        <legend>
+                            <h3>6. Additional Information</h3>
+                        </legend>
+                        <table width="100%" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td width="30%" valign="top"><label>Languages Known:</label></td>
+                                <td width="70%">
+                                    <table cellpadding="3" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="langEnglish" name="languages"
+                                                    value="English">
+                                                <label for="langEnglish">English</label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="langSpanish" name="languages"
+                                                    value="Spanish">
+                                                <label for="langSpanish">Spanish</label>
+                                            </td>
+                                            <td>
+                                                <input type="checkbox" id="langFrench" name="languages" value="French">
+                                                <label for="langFrench">French</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="langGerman" name="languages" value="German">
+                                                <label for="langGerman">German</label>
+                                            </td>
+                                            <td colspan="2">
+                                                <input type="text" id="otherLang" name="otherLang"
+                                                    placeholder="Other (specify)" size="15">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="hobbies">Hobbies:</label></td>
+                                <td><input type="text" id="hobbies" name="hobbies"
+                                        placeholder="E.g. Reading, Traveling, Coding" size="45"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="strengths">Strengths:</label></td>
+                                <td><input type="text" id="strengths" name="strengths" placeholder="Your key strengths"
+                                        size="45"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><label for="whyHire">Why should we hire you? * :</label></td>
+                                <td><textarea id="whyHire" name="whyHire" rows="5" cols="47"
+                                        placeholder="Explain why you are a good fit for this role..."
+                                        required></textarea></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 7. Declaration Section -->
+                    <fieldset>
+                        <legend>
+                            <h3>7. Declaration</h3>
+                        </legend>
+                        <table width="100%" cellpadding="15" cellspacing="0" bgcolor="#f0f0f0">
+                            <tr>
+                                <td>
+                                    <input type="checkbox" id="declaration" name="declaration" required>
+                                    <label for="declaration"><b>I hereby declare that all the information provided is
+                                            true to the best of my knowledge and belief. I understand that any
+                                            misrepresentation may lead to disqualification.</b></label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <br><br>
+
+                    <!-- 8. Buttons -->
+                    <table width="100%" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <td align="center">
+                                <input type="submit" value="Submit Application">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="reset" value="Reset Form">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+                <!-- End of Form -->
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>BOOTSTRAP</li>
+        <li>PYTHON</li>
+        <li>SQL</li>
+        <li>REACT</li>
+    </ol>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>BOOTSTRAP</li>
+        <li>PYTHON</li>
+        <li>SQL</li>
+        <li>REACT</li>
+    </ul>
+</body>
+
+</html>
